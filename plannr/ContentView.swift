@@ -33,7 +33,7 @@ struct LoginSignupView: View {
 Let’s get started by creating your personalized itinerary. 
 We’ll help you organize your trip and make it unforgettable.
 """)
-                        .font(.body)
+                        .font(.custom("HelveticaNeue-Bold", size:14))
                         .foregroundColor(.black.opacity(0.7))
                         .multilineTextAlignment(.center)
                         .frame(maxWidth: .infinity) // Ensures the text doesn't overflow
@@ -213,7 +213,7 @@ struct SignupView: View {
                         Image(systemName: isPrivacyChecked ? "checkmark.circle.fill" : "circle")
                             .foregroundColor(isPrivacyChecked ? Color.blue : Color.white)
                             .font(.title2)
-                    }
+                    }.disabled(!hasReviewedTerms)
                     NavigationLink(destination: AgreementPageView(hasReviewedTerms: $hasReviewedTerms)) {
                         Text("By signing up, you agree to the Terms and Privacy Policy.")
                             .underline()
@@ -228,6 +228,13 @@ struct SignupView: View {
                         navigateToCreatePassword = true
                     } else {
                         errorMessage = "Please enter a valid email address."
+                    }
+                    if hasReviewedTerms == true
+                    {
+                        navigateToCreatePassword = true
+                    }
+                    else {
+                        errorMessage = "Please review terms"
                     }
                 }) {
                     Text("Continue")
