@@ -27,22 +27,13 @@
 		358734CC2D2CCDC90070221E /* plannr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plannr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358734DC2D2CCDCB0070221E /* plannrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plannrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		358734E62D2CCDCB0070221E /* plannrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plannrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3587352D2D3464320070221E /* plannr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = plannr.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		358734CE2D2CCDC90070221E /* plannr */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = plannr;
-			sourceTree = "<group>";
-		};
-		358734DF2D2CCDCB0070221E /* plannrTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = plannrTests;
-			sourceTree = "<group>";
-		};
-		358734E92D2CCDCB0070221E /* plannrUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = plannrUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -76,8 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				358734CE2D2CCDC90070221E /* plannr */,
-				358734DF2D2CCDCB0070221E /* plannrTests */,
-				358734E92D2CCDCB0070221E /* plannrUITests */,
 				358734CD2D2CCDC90070221E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +77,13 @@
 				358734CC2D2CCDC90070221E /* plannr.app */,
 				358734DC2D2CCDCB0070221E /* plannrTests.xctest */,
 				358734E62D2CCDCB0070221E /* plannrUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3587352E2D3464320070221E /* Products */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +126,6 @@
 			dependencies = (
 				358734DE2D2CCDCB0070221E /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				358734DF2D2CCDCB0070221E /* plannrTests */,
-			);
 			name = plannrTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +145,6 @@
 			);
 			dependencies = (
 				358734E82D2CCDCB0070221E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				358734E92D2CCDCB0070221E /* plannrUITests */,
 			);
 			name = plannrUITests;
 			packageProductDependencies = (
@@ -198,6 +188,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 358734CD2D2CCDC90070221E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3587352E2D3464320070221E /* Products */;
+					ProjectRef = 3587352D2D3464320070221E /* plannr.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				358734CB2D2CCDC90070221E /* plannr */,
