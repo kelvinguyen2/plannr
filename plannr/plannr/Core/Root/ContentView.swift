@@ -241,7 +241,7 @@ struct SignupView: View {
                         Image(systemName: isPrivacyChecked ? "checkmark.circle.fill" : "circle")
                             .foregroundColor(isPrivacyChecked ? Color.blue : Color.white)
                             .font(.title2)
-                    }
+                    }.disabled(!hasReviewedTerms)
 
                     NavigationLink(destination: AgreementPageView(hasReviewedTerms: $hasReviewedTerms)) {
                         Text("By signing up, you agree to the Terms and Privacy Policy.")
