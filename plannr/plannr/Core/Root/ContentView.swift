@@ -164,8 +164,6 @@ Let’s get started by creating your personalized itinerary. We’ll help you or
         }
     }
 }
-import SwiftUI
-
 struct SignupView: View {
     @State private var fullName = "" // Full Name field
     @State private var email = "" // Email field
